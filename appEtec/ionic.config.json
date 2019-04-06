@@ -1,6 +1,8 @@
 {
   "name": "appEtec",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "8f0da41c"
 }
