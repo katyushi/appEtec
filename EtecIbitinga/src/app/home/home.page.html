@@ -5,11 +5,21 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<!---->
 <ion-content>
-<ion-button size="small" color="cpsEtec"
-(click)="openWithInAppBrowser('https://etecnewsibitinga.wixsite.com/etecnewsibitinga/jornal')">
-  Artigos Etec News Ibitinga
-</ion-button>
+  <h1>
+    Bem Vindo (a) a Etec de Ibitinga
+  </h1>
+  <br>
+  <ion-card>
+    <img src="assets/imgs/poty.jpg">
+    <ion-card-title routerLink ="/fotosvisitas">
+      Fotos Visitas Tecnicas
+    </ion-card-title>
+  </ion-card>
+  <ion-button size="small" color="cpsEtec"
+    (click)="openWithInAppBrowser('https://etecnewsibitinga.wixsite.com/etecnewsibitinga/jornal')">
+      Artigos Etec News Ibitinga
+  </ion-button>
 
 </ion-content>
