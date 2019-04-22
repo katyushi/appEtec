@@ -1,5 +1,8 @@
 {
-  "name": "example",
-  "integrations": {},
-  "type": "angular"
+  "name": "EtecIbitinga",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "3a13a003"
 }
