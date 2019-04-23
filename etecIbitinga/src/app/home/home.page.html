@@ -1,11 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+  <ion-toolbar color="cpsRed">
+    <ion-title color="cpsWhite" align="center">
+      Bem vindo(a) a Etec de Ibitinga
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="openWithInAppBrowser('https://gooogle.com')">abrir no navegador</ion-button>
+  <!--card fotos alunos-->
+  <ion-card routerLink="/fotalunos" color="cpsGray">
+    <img src="assets/shapes.svg">
+    <ion-card-title color="cpsWhite">
+      Fotos Alunos
+    </ion-card-title>
+  </ion-card>
+  <!-- fim card fotos alunos-->
+
+  <!--botao abrir pagina jornal-->
+  <ion-button (click)="openWithInAppBrowser
+    ('https://etecnewsibitinga.wixsite.com/etecnewsibitinga/jornal')"
+    color="cpsGray">abrir no navegador
+  </ion-button>
+  <!--fim botao abrir pagina jornal-->
+  
 </ion-content>
