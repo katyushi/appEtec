@@ -24,3 +24,31 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* new colors */
+
+/* red */
+.ion-color-cpsRed {
+    --ion-color-base: #B01217;
+    --ion-color-base-rgb: 176, 18, 23;
+}
+/* black */
+.ion-color-cpsBlack {
+    --ion-color-base: #000000;
+    --ion-color-base-rgb: 0, 0, 0;
+}
+/* ducked up blue */
+.ion-color-cpsIdk {
+    --ion-color-base: #4A555C;
+    --ion-color-base-rgb: 74, 85, 92;
+}
+/* white */
+.ion-color-cpsWhite {
+    --ion-color-base: #FFFFFF;
+    --ion-color-base-rgb: 255, 255, 255;
+}
+/* gray */
+.ion-color-cpsGray {
+    --ion-color-base: #808183;
+    --ion-color-base-rgb: 128, 129, 131;
+}
