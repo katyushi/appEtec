@@ -1,0 +1,7 @@
+{
+  "name": "OpSchool",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
