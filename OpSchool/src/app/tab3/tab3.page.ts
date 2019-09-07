@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RssxmlService } from './../rssxml.service';
 
 @Component({
   selector: 'app-tab3',
@@ -8,6 +7,7 @@ import { RssxmlService } from './../rssxml.service';
 })
 export class Tab3Page {
 
-  constructor(private rssxmlServices: RssxmlService) {  }
+constructor() {  }
+
 
 }
