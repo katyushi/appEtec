@@ -6,9 +6,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RssxmlService {
 
+  private tempPath = '../../../resources/XMLParsedToJson.json';
+
   constructor(private http: HttpClient) {  }
 
-  public getRssFeed(){
-    return this.http.get('https://etecnewsibitinga.wixsite.com/etecnewsibitinga/blog-feed.xml');
+  public getRssFeed() {
+    return this.http.get(this.tempPath);
   }
 }
