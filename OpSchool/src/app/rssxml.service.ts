@@ -6,11 +6,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RssxmlService {
 
-  private tempPath = '../../../resources/XMLParsedToJson.json';
+  
 
   constructor(private http: HttpClient) {  }
 
-  public getRssFeed() {
-    return this.http.get(this.tempPath);
-  }
+  public getProducts(): Observable<any> {
+    return this._http.get(this.tempPath).map((response: Response) =>
+    <any>response.json())
+    .do(data => console.log(JSON.stringify(data)))
+    .catch(this.handleError);
+    }
 }

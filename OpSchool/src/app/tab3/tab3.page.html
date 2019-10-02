@@ -15,13 +15,12 @@
     </ion-card-title>
   </ion-card>
   /*fim card em construção*/-->
-  
-  <ion-card>
-    <ion-car-title>
-      {{ titleArt }}
-    </ion-car-title>
-    <ion-label>
-      {{ descriptionArt }}
-    </ion-label>
-  </ion-card>
+
+  <ion-grid>
+    <ion-row *ngFor="let item of data; index as i">
+      <ion-col size="1">{{ i+ 1 }}</ion-col>
+      <ion-col size="3"> {{ item.title }}</ion-col>
+      <ion-col size="3"> {{ item.description }}</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Local Json in Ionic 4</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--<ion-row *ngFor="let item of data; index as i">-->
+  <ion-card *ngForm="let item of data">
+    <ion-card-title>
+      {{item.rss.channel.title}}
+    </ion-card-title>
+  </ion-card>
+</ion-content>
