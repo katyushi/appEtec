@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,14 @@ import { Component } from '@angular/core';
 export class HomePage implements OnInit {
   data: any;
 
-  constructor() { }
+  constructor() {   }
 
   ngOnInit() {
-    fetch('./assets/data/datajson.json').then(res => res.json())
+    fetch('/assets/data/datajson.json')
+    .then(res => res.json())
     .then(json => {
       this.data = json;
     });
+    console.log(this.data);
   }
 }

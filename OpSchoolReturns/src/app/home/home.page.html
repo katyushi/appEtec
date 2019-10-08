@@ -5,10 +5,26 @@
 </ion-header>
 
 <ion-content padding>
-  <!--<ion-row *ngFor="let item of data; index as i">-->
-  <ion-card *ngForm="let item of data">
+  <ion-card *ngFor="let item of data">
     <ion-card-title>
-      {{item.rss.channel.title}}
+      {{item.name}}
     </ion-card-title>
+    <ion-card-subtitle>
+      {{item.description}}
+    </ion-card-subtitle>
+    <p>
+      {{item.link}}
+    </p>
+  </ion-card>
+
+  <br>
+
+  <ion-card *ngFor="let item of data">
+    <ion-card-title>
+      {{item.articles.title}}
+    </ion-card-title>
+    <p>
+      {{item.articles.description}}
+    </p>
   </ion-card>
 </ion-content>
