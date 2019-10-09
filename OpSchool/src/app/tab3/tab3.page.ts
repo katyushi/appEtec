@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { RssxmlService } from './../rssxml.service';
 
 @Component({
   selector: 'app-tab3',
@@ -8,14 +9,14 @@ import { OnInit } from '@angular/core';
 })
 export class Tab3Page implements OnInit {
 
-  data: any;
+  public data101: any;
 
-constructor() {  }
+constructor(private rssxmlService: RssxmlService) {  }
 
 ngOnInit() {
-  fetch('./assets/data/datajson.json').then(res => res.json())
-  .then(json => {
-    this.data = json;
+  this.rssxmlService.getData().subscribe(dados => {
+    console.log(dados);
+    this.data101 = dados['data'];
   });
 }
 
