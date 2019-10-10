@@ -30,12 +30,20 @@
 
   <br>
 
-  <ion-card *ngFor="let item of data101">
-    <ion-card-title>
-      {{item.articles.title}}
+  <ion-card *ngFor="let item of data101.articles">
+    <ion-card-title *ngFor="let subitem of item.title">
+      {{subitem.title}}
     </ion-card-title>
-    <p>
-      {{item.articles.description}}
+    <p *ngFor="let subitem of item.description">
+      {{subitem.description}}
     </p>
   </ion-card>
+
+  <!--<ion-item-group *ngFor="let item of testData">
+    <ion-item *ngFor="let subitem of item.title">
+      <ion-label>
+        {{ subitem.title }}
+      </ion-label>
+    </ion-item>
+  </ion-item-group>-->
 </ion-content>

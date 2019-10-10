@@ -6,12 +6,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RssxmlService {
 
-  private url = 'https://katyushi.github.io/FormatedData.json';
+  private url = 'https://katyushi.github.io/jsons/FormatedData.json';
+  private testUrl = 'https://katyushi.github.io/jsons/idk.json';
+  private backupUrl = 'https://katyushi.github.io/jsons/Output.json';
 
   constructor(private http: HttpClient) { }
 
+  public geBackup(){
+    return this.http.get(this.backupUrl);
+  }
+
   public getData() {
     return this.http.get(this.url);
+  }
+
+  public getTestData() {
+    return this.http.get(this.testUrl);
   }
 
 }
