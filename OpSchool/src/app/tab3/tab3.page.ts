@@ -20,15 +20,15 @@ ngOnInit() {
     console.log(dados);
     // this.data101 = dados['data'];
     this.data101 = dados;
-    // console.log('this is data101' , this.data101);
+    console.log('this is data101' , this.data101);
     this.datos = Array.of(this.data101);
-    // console.log('this is datos' , this.datos);
+    console.log('this is datos' , this.datos);
   });
-  /*this.rssxmlService.getTestData().subscribe(data => {
+  this.rssxmlService.getTestData().subscribe(data => {
     console.log(data);
     this.testData = data;
-    // console.log('this is testData' , this.testData);
-  });*/
+    console.log('this is testData' , this.testData);
+  });
 }
 
 }

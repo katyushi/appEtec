@@ -12,7 +12,7 @@ export class RssxmlService {
 
   constructor(private http: HttpClient) { }
 
-  public geBackup(){
+  public getBackup(){
     return this.http.get(this.backupUrl);
   }
 
