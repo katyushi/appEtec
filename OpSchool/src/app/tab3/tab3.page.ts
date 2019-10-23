@@ -16,7 +16,7 @@ export class Tab3Page implements OnInit {
 constructor(private rssxmlService: RssxmlService) {  }
 
 ngOnInit() {
-  this.rssxmlService.getData().subscribe(dados => {
+  /*this.rssxmlService.getData().subscribe(dados => {
     console.log(dados);
     // this.data101 = dados['data'];
     this.data101 = dados;
@@ -28,7 +28,7 @@ ngOnInit() {
     console.log(data);
     this.testData = data;
     console.log('this is testData' , this.testData);
-  });
+  });*/
 }
 
 }
