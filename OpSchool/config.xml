@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.github.katyushi" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Etec de Ibitinga</name>
-    <description>An awesome Ionic/Cordova app for escola aberta 2019.</description>
+    <name>EtecApp</name>
+    <description>An awesome Ionic/Cordova app for etec de ibitinga.</description>
     <author email="hugo.luiz@outlook.com" href="http://katyushi.github.io">Hugo Lazzari</author>
     <content src="index.html" />
     <preference name="Orientation" value="portrait" />
